@@ -1,7 +1,6 @@
 name = "fotopuan"
 main = "worker.ts"
 compatibility_date = "2024-09-23"
-pages_build_output_dir = "dist"
 
 [build]
 command = "npm run build"
@@ -10,10 +9,12 @@ command = "npm run build"
 directory = "./dist"
 binding = "ASSETS"
 
-# Cloudflare D1 Database Binding
-# 1. Create your database: npx wrangler d1 create fotopuan-db
-# 2. Paste the database_id below:
-[[d1_databases]]
-binding = "DB"
-database_name = "fotopuan-db"
-database_id = "fotopuan-db-placeholder"
+# Cloudflare D1 Veritabanı (İsteğe Bağlı):
+# Cloudflare Dashboard'dan veya `npx wrangler d1 create fotopuan-db` ile 
+# bir D1 veritabanı oluşturduğunuzda aşağıdaki 4 satırın başındaki (#) işaretini kaldırıp 
+# aldığınız database_id'yi yapıştırabilirsiniz.
+# 
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "fotopuan-db"
+# database_id = "your-d1-database-uuid-here"
