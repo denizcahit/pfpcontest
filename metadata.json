@@ -1,0 +1,7 @@
+{
+  "name": "FotoPuan - Profil Fotoğrafı Oylama & Yarışma Arenası",
+  "description": "Kullanıcıların profil fotoğraflarını yükleyip yarıştığı, puanlama ve düello modlarıyla anlık liderlik tablosunun belirlendiği yarışma platformu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
